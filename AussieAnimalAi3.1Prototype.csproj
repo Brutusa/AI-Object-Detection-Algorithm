@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>AussieAnimalAi3._1Complete</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction" />
+    <None Remove="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Training" />
+    <None Remove="KendoUICore" />
+    <None Remove="Kendo.Mvc" />
+    <None Remove="FormFactory" />
+    <None Remove="Views\FileUpload\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction" Version="2.0.0" />
+    <PackageReference Include="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Training" Version="2.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\FileUpload\" />
+  </ItemGroup>
+</Project>
